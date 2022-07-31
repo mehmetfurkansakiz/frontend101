@@ -51,3 +51,32 @@ console.log("items - ilk hali: ", items)
   var oncesilsonraekle = dizi.splice(1,2,"murat"); // 1. indisten sonra (1. indis dahil) 2 değer silip güncel değer i ekledi
   console.log("silinen değerler : " + oncesilsonraekle + "<br>");
   console.log("ekledikten sonraki dizi : " + dizi + "<br>");
+
+
+
+  // slice(); kendisine parametre olarak verilecek olan dizi aralığında bulunan değerleri kopyalayarak yeni bir dizi oluşturur.
+  // Oluşturduğu diziyi geri döndürür.
+
+  var dizi = ["ali", "veli", "kırklareli", "emret", "komutanım", "diyeceksiniz"];
+  console.log("Orjinal dizi : " + dizi + "<br>");
+  
+  // 2. indisden başlayarak (2. indis dahil) sonuna kadar olan tüm değerleri aldı ve yeni dizi oluşturdu.
+  var kopya = dizi.slice(2);
+  console.log("1. kopya dizi : " + kopya + "<br>");
+
+  // 2. indisden başlayarak (2. indis dahil), 5. indise kadar (5 hariç) olan tüm değerleri aldı ve yeni dizi oluşturdu.
+  var kopya2 = dizi.slice(2,5);
+  console.log("2. kopya dizi : " + kopya2 + "<br>");
+
+  // 2. indisden başlayarak (2. indis dahil), sonuncu değer hariç tüm değerleri aldı ve yeni dizi oluşturdu.
+  var kopya3 = dizi.slice(2,-1);
+  console.log("3. kopya dizi : " + kopya3 + "<br>");
+
+  // sondan başlayarak 4. indis ile sondan 2. indise kadar olan değerleri al ve yeni dizi oluştur. (-4 dahil, -2 hariç oluyor)
+  var kopya4 = dizi.slice(-4,-2);
+  console.log("4. kopya dizi : " + kopya4 + "<br>");
+
+  // sondan başlayarak 4. indis ile en sona kadar olan değerleri al ve yeni dizi oluştur. (-4 dahil)
+  var kopya5 = dizi.slice(-4);
+  console.log("5. kopya dizi : " + kopya5 + "<br>");
+  
